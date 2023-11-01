@@ -12,29 +12,27 @@
   <form method="POST" action="{% url 'home' %}">
     {% csrf_token %}
 
-    <form>
-      <div class="mb-3">
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          class="form-control"
-          aria-describedby="emailHelp"
-          required
-        />
-      </div>
-      <br />
-      <div class="mb-3">
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          class="form-control"
-          required
-        />
-      </div>
-      <button type="submit" class="btn btn-secondary">Login</button>
-    </form>
+    <div class="mb-3">
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        class="form-control"
+        aria-describedby="emailHelp"
+        required
+      />
+    </div>
+    <br />
+    <div class="mb-3">
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        class="form-control"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-secondary">Login</button>
   </form>
 
   {% endif %}
